@@ -39,7 +39,6 @@ function App() {
           >
             <div className="w-full mb-1">
               <InputBox
-                className="font-bold"
                 label="from"
                 amount={amount}
                 currencyOptions={options}

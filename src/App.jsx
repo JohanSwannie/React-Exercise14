@@ -26,7 +26,7 @@ function App() {
     <div
       className="w-full h-screen flex flex-wrap justify-center items-center bg-cover bg-no-repeat"
       style={{
-        backgroundImage: `url(https://www.desktopbackground.org/download/1024x768/2010/05/23/21713_fantasy-money-tree-landscape-children-art-hd-wallpapers_1600x1000_h.png)`,
+        backgroundImage: `url(https://image.slidesdocs.com/responsive-images/background/exploring-finances-through-a-3d-rendered-calculator-and-money-powerpoint-background_ef6afaa9e4__960_540.jpg)`,
       }}
     >
       <div className="w-full">

@@ -30,14 +30,14 @@ function App() {
       }}
     >
       <div className="w-full">
-        <div className="w-full max-w-xl mx-auto border border-gray-300 rounded-xl p-5 backdrop-blur-sm bg-white/30">
+        <div className="w-full max-w-xl mx-auto border-2 border-gray-300 rounded-xl p-12 backdrop-blur-sm bg-white/30">
           <form
             onSubmit={(e) => {
               e.preventDefault();
               convert();
             }}
           >
-            <div className="w-full mb-1">
+            <div className="w-full mb-1 p-1">
               <CurrencyInput
                 label="from"
                 amount={amount}
@@ -49,13 +49,13 @@ function App() {
             </div>
             <div className="relative w-full h-0.5">
               <button
-                className="absolute left-1/2 -translate-x-1/2 -translate-y-1/2 border-4 border-blue rounded-md bg-red-600 text-white px-7 py-1.5"
+                className="absolute left-1/2 -translate-x-1/2 -translate-y-1/2 border-2 border-gray rounded-md bg-red-600 text-white px-7 py-3.5"
                 onClick={swap}
               >
                 Swap
               </button>
             </div>
-            <div className="w-full mb-1">
+            <div className="w-full mb-1 p-1">
               <CurrencyInput
                 label="to"
                 amount={convertedAmount}
@@ -67,7 +67,7 @@ function App() {
             </div>
             <button
               type="submit"
-              className="w-full bg-green-600 text-white px-4 py-3 rounded-lg"
+              className="w-full bg-green-600 border-2 border-white-600 mt-3 text-white px-4 py-3 rounded-lg"
             >
               Convert {from.toUpperCase()} to {to.toUpperCase()}
             </button>

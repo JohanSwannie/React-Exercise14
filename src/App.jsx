@@ -58,8 +58,8 @@ function App() {
             <div className="w-full mb-1">
               <InputBox
                 label="to"
-                currencyOptions={options}
                 amount={convertedAmount}
+                currencyOptions={options}
                 onCurrencyChange={(currency) => setTo(currency)}
                 selectedCurrency={to}
                 amountDisabled

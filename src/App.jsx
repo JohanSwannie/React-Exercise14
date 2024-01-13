@@ -19,8 +19,7 @@ function App() {
   };
 
   const convert = () => {
-    alert(currencyData[to]);
-    setConvertedAmount(amount * currencyData[to]);
+    setConvertedAmount((amount * currencyData[to]).toFixed(2));
   };
 
   return (
@@ -31,7 +30,7 @@ function App() {
       }}
     >
       <div className="w-full">
-        <div className="w-full max-w-xl mx-auto border-2 border-gray-300 rounded-xl p-14 backdrop-blur-sm bg-white/30">
+        <div className="w-full max-w-xl mx-auto border-2 border-gray-300 rounded-xl p-12 backdrop-blur-sm bg-white/30">
           <form
             onSubmit={(e) => {
               e.preventDefault();

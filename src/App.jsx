@@ -3,7 +3,7 @@ import useCurrencyInfo from "./hooks/useCurrencyInfo";
 import CurrencyInput from "./components/CurrencyInput";
 
 function App() {
-  const [amount, setAmount] = useState(0);
+  const [amount, setAmount] = useState();
   const [from, setFrom] = useState("aud");
   const [to, setTo] = useState("nzd");
   const [convertedAmount, setConvertedAmount] = useState(0);
@@ -20,6 +20,11 @@ function App() {
 
   const convert = () => {
     setConvertedAmount((amount * currencyData[to]).toFixed(2));
+  };
+
+  const clearAmounts = () => {
+    setAmount(0);
+    setConvertedAmount(0);
   };
 
   return (
@@ -45,6 +50,7 @@ function App() {
                 onCurrencyChange={(currency) => setFrom(currency)}
                 onAmountChange={(amount) => setAmount(amount)}
                 selectedCurrency={from}
+                focus
               />
             </div>
             <div className="relative w-full h-0.5">
@@ -70,6 +76,12 @@ function App() {
               className="w-full bg-green-600 border-2 border-white-600 mt-3 text-white px-4 py-3 rounded-lg"
             >
               Convert {from.toUpperCase()} to {to.toUpperCase()}
+            </button>
+            <button
+              className="bg-blue-500 w-full text-white hover:bg-blue-900 font-bold py-2 px-4 mt-3 rounded content-center"
+              onClick={clearAmounts}
+            >
+              Clear
             </button>
           </form>
         </div>

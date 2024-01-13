@@ -31,7 +31,7 @@ function CurrencyInput({
           id={id}
           type="number"
           className="outline-none w-full bg-transparent py-1.5"
-          placeholder="Amount"
+          placeholder=""
           disabled={amountDisabled}
           value={amount}
           ref={inputFocus}

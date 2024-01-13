@@ -42,7 +42,10 @@ function App() {
               convert();
             }}
           >
-            <div className="w-full mb-1 p-1">
+            <div className="w-full bg-gray-600 text-center  border border-white mt-3 mb-5 text-white px-4 py-4 rounded-lg">
+              Currency Converter
+            </div>
+            <div className="w-full mb-10 p-1">
               <CurrencyInput
                 label="from"
                 amount={amount}
@@ -58,10 +61,10 @@ function App() {
                 className="absolute left-1/2 -translate-x-1/2 -translate-y-1/2 border-2 border-gray rounded-md bg-red-600 text-white px-7 py-3.5"
                 onClick={swap}
               >
-                Swap
+                Swap Them Around
               </button>
             </div>
-            <div className="w-full mb-1 p-1">
+            <div className="w-full mb-1 mt-10 p-1">
               <CurrencyInput
                 label="to"
                 amount={convertedAmount}
@@ -73,12 +76,12 @@ function App() {
             </div>
             <button
               type="submit"
-              className="w-full bg-green-600 border-2 border-white-600 mt-3 text-white px-4 py-3 rounded-lg"
+              className="w-full bg-green-600 border-2 border-white-600 mt-3 text-white px-4 py-4 rounded-lg"
             >
               Convert {from.toUpperCase()} to {to.toUpperCase()}
             </button>
             <button
-              className="bg-blue-500 w-full text-white hover:bg-blue-900 font-bold py-2 px-4 mt-3 rounded content-center"
+              className="bg-blue-500 w-full text-white border-2 border-white-600 hover:bg-blue-900 font-bold py-4 px-4 mt-3 rounded content-center"
               onClick={clearAmounts}
             >
               Clear

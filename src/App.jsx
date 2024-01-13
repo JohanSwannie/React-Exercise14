@@ -42,7 +42,7 @@ function App() {
               convert();
             }}
           >
-            <div className="w-full bg-gray-600 text-center  border border-white mt-3 mb-5 text-white px-4 py-4 rounded-lg">
+            <div className="w-full bg-gray-600 text-center border border-white mt-3 mb-5 text-white px-4 py-4 rounded-lg">
               Currency Converter
             </div>
             <div className="w-full mb-10 p-1">

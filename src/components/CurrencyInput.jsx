@@ -1,4 +1,4 @@
-import React, { useId } from "react";
+import React, { useId, useRef, useEffect } from "react";
 
 function CurrencyInput({
   label,
@@ -12,6 +12,11 @@ function CurrencyInput({
   className = "",
 }) {
   const id = useId();
+  const inputFocus = useRef();
+
+  useEffect(() => {
+    inputFocus.current.focus();
+  }, []);
 
   return (
     <div className={`bg-white p-3 rounded-lg text-sm flex ${className}`}>
@@ -29,6 +34,7 @@ function CurrencyInput({
           placeholder="Amount"
           disabled={amountDisabled}
           value={amount}
+          ref={inputFocus}
           onChange={(e) =>
             onAmountChange && onAmountChange(Number(e.target.value))
           }

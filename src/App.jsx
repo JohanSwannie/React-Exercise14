@@ -82,7 +82,7 @@ function App() {
             className="bg-blue-500 w-full text-white border-2 border-white-600 hover:bg-blue-900 font-bold py-4 px-4 mt-3 rounded content-center"
             onClick={clearAmounts}
           >
-            Clear
+            Clear The Amounts
           </button>
         </form>
       </div>

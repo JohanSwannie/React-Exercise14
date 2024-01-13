@@ -53,7 +53,6 @@ function App() {
                 onCurrencyChange={(currency) => setFrom(currency)}
                 onAmountChange={(amount) => setAmount(amount)}
                 selectedCurrency={from}
-                focus
               />
             </div>
             <div className="relative w-full h-0.5">

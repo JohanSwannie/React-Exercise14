@@ -35,14 +35,14 @@ function App() {
       }}
     >
       <div className="w-full">
-        <div className="w-full max-w-xl mx-auto border-2 border-gray-300 rounded-xl p-12 backdrop-blur-sm bg-white/30">
+        <div className="w-full max-w-xl mx-auto border-2 border-gray-300 rounded-xl p-20 backdrop-blur-sm bg-white/30">
           <form
             onSubmit={(e) => {
               e.preventDefault();
               convert();
             }}
           >
-            <div className="w-full bg-gray-600 text-center border border-white mt-3 mb-5 text-white px-4 py-4 rounded-lg">
+            <div className="w-full bg-gray-600 text-center border border-white mt-0 mb-5 text-white px-4 py-4 rounded-lg">
               Currency Converter
             </div>
             <div className="w-full mb-10 p-1">

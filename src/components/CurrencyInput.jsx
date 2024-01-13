@@ -6,7 +6,7 @@ function CurrencyInput({
   onAmountChange,
   onCurrencyChange,
   currencyOptions = [],
-  selectedCurrency = "aus",
+  selectedCurrency = "",
   amountDisabled = false,
   currencyDisabled = false,
   className = "",

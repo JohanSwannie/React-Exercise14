@@ -34,7 +34,7 @@ function App() {
         backgroundImage: `url(https://image.slidesdocs.com/responsive-images/background/exploring-finances-through-a-3d-rendered-calculator-and-money-powerpoint-background_ef6afaa9e4__960_540.jpg)`,
       }}
     >
-      <div className="w-full max-w-xl mx-auto border-2 border-gray-300 rounded-xl p-20 backdrop-blur-sm bg-white/30">
+      <div className="w-full max-w-xl mx-auto border-2 border-gray-300 rounded-2xl p-20 backdrop-blur-sm bg-white/30">
         <form
           onSubmit={(e) => {
             e.preventDefault();

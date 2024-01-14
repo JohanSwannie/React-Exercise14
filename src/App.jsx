@@ -3,7 +3,7 @@ import useCurrencyInfo from "./hooks/useCurrencyInfo";
 import CurrencyInput from "./components/CurrencyInput";
 
 function App() {
-  const [amount, setAmount] = useState();
+  const [amount, setAmount] = useState(0);
   const [from, setFrom] = useState("aud");
   const [to, setTo] = useState("nzd");
   const [convertedAmount, setConvertedAmount] = useState(0);

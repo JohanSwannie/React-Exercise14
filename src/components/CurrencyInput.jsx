@@ -1,6 +1,6 @@
 import React, { useId, useRef, useEffect } from "react";
 
-function CurrencyInput({
+const CurrencyInput = ({
   label,
   amount,
   onAmountChange,
@@ -10,7 +10,7 @@ function CurrencyInput({
   amountDisabled = false,
   currencyDisabled = false,
   className = "",
-}) {
+}) => {
   const id = useId();
   const inputFocus = useRef();
 
@@ -59,6 +59,6 @@ function CurrencyInput({
       </div>
     </div>
   );
-}
+};
 
 export default CurrencyInput;
